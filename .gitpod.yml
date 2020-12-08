@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: 'echo "TODO: Replace with command to start project"'
+  - init: "javac src/com/luv2code/springdemo/*.java -d bin"
+    command: "java -cp bin/ com.luv2code.springdemo.MyApp"
